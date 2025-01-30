@@ -23,6 +23,7 @@ const sendEmail = (to, subject, message) => {
         html: message
     };
 
+    
     try{
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {

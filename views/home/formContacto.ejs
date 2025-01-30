@@ -21,7 +21,7 @@
 <script>
 
     let map = L.map('map')
-        .setView([41.66, -4.72], 15);
+        .setView([9.901068, -67.356178], 15);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -29,7 +29,7 @@
     }).addTo(map);
 
     L.control.scale().addTo(map);
-    L.marker([41.66, -4.71], { draggable: true }).addTo(map);
+    L.marker([9.901068, -67.356178], { draggable: true }).addTo(map);
 
     let getIpData = async () => {
         const res = await fetch('https://ipapi.co/json/');

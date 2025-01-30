@@ -32,6 +32,7 @@ const Contacto = sequelize.define('Contacto', {
     timestamps: false
 });
 
+
 class ContactosModel {
     static async addContacto(contacto) {
         return await Contacto.create(contacto);

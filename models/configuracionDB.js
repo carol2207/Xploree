@@ -8,6 +8,7 @@ const sequelize = new Sequelize({
     logging: false,
 });
 
+
 sequelize
     .sync()
     .then(() => console.log("Base de datos y tablas creadas"))
