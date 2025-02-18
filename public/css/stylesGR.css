@@ -1,0 +1,106 @@
+
+
+/* Estilo del contenedor del formulario */
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+}
+
+/* Estilo de los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #007BFF;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Estilo del botón de envío */
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Estilo del pie de página */
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .form-container {
+        width: 95%;
+    }
+    .containerC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.containerImg{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}.containerImg img{
+width:100%;
+height:100%;
+}
+}
+
+.containerImg{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}.containerImg img{
+width:70%;
+height:70%;
+}.containerC{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}.tituloF{
+    width:100%;
+}.tituloF h2{
+    width:100%;
+    text-align: center;
+    font-size:4rem;
+}
